@@ -1,6 +1,6 @@
 # PDF Scraper
 
-This repository contains a Python script that scrapes text from PDF files. The script can extract and organize text data from PDF documents for further analysis, storage, or presentation. Additionally, folders in this repository contain sample PDF files and their respective scraped results to demonstrate the functionality of the scraper.
+This repository contains a Python script that scrapes text from PDF files. The script can extract and organize text data from PDF documents for further analysis, storage, or presentation. 
 
 ## Features
 

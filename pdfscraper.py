@@ -44,7 +44,7 @@ def detect_and_crop_tables_from_image(image, output_folder, page_number):
     for contour in contours:
         x, y, w, h = cv2.boundingRect(contour)
         
-        if w > 100 and h > 50:  # can change based on pdf size
+        if w > 400 and h > 400:  # can change based on pdf size
             overlap = False
             for (prev_x, prev_y, prev_w, prev_h) in bounding_boxes:
                 if (x < prev_x + prev_w and x + w > prev_x and y < prev_y + prev_h and y + h > prev_y):
@@ -66,6 +66,6 @@ def scrape_pdf_and_crop(pdf_path, crop_folder, zoom=2.0):
     pages_processed = process_and_crop_pdf_pages(pdf_path, crop_folder, zoom)
     print(f"{pages_processed} pages cropped, saved in {crop_folder}.")
 
-pdf_path = "2013report.pdf"  # pdf file path
-crop_folder = "2013cropped"  # path to save folder
+pdf_path = "ee2023.pdf"  # pdf file path
+crop_folder = "ee2023cropped"  # path to save folder
 scrape_pdf_and_crop(pdf_path, crop_folder)

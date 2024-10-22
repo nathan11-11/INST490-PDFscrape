@@ -53,3 +53,6 @@ To use the PDF scraper, follow these steps:
 - `scraped/` - Stores the text extracted from each PDF in separate files.
 - `pdfscraper.py` - The Python script that performs the scraping.
 
+## 2nd Scraper
+
+Used for tables into csv. Same use method as above (change file name and save path).
